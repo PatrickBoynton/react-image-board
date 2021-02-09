@@ -13,7 +13,7 @@ class ImageForm extends Component {
     event.preventDefault();
     this.props.addImage(this.state);
   }
-  
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -37,6 +37,11 @@ class ImageList extends Component {
 }
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.addImage = this.addImage.bind(this);
+  }
   render() {
     return (
       <React.Fragment>
