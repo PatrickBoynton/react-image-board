@@ -43,6 +43,10 @@ class App extends Component {
     this.addImage = this.addImage.bind(this);
   }
 
+  addImage(image) {
+    const images = [...this.state.images];
+    images.push(image)
+  }
   componentDidMount() {
     const images = [
       {
