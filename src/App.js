@@ -12,9 +12,9 @@ class ImageForm extends Component {
 
   render() {
     return (
-      <form>
-        <input placeholder="Image Url"/>
-        <input placeholder="Image Caption"/>
+      <form onSubmit={this.handleSubmit}>
+        <input placeholder="Image Url" name="imgUrl" value={this.state.imgUrl}/>
+        <input placeholder="Image Caption" name="imgCaption" value={this.state.imgCaption}/>
         <button type="submit" className="btn">Add Image</button>
       </form>
     )
