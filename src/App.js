@@ -5,7 +5,11 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Hello World!</h1>
+        <form>
+          <input placeholder="Image Url"/>
+          <input placeholder="Image Caption"/>
+          <button type="submit" className="btn">Add Image</button>
+        </form>
       </React.Fragment>
     )
   }
