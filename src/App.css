@@ -19,5 +19,8 @@ li {
 }
 input {
   display: block;
-  margin: 5px;
+  margin: 5px auto;
+}
+form {
+  text-align: center;
 }
