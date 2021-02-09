@@ -9,7 +9,11 @@ class ImageForm extends Component {
       imgCaption:""
     }
   }
-
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.addImage(this.state);
+  }
+  
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
