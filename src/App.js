@@ -76,7 +76,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="App">
         <ImageForm addImage={this.addImage}/>
         <ImageList images={this.state?.images}/>
         </div>
