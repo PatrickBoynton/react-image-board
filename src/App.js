@@ -37,8 +37,7 @@ class ImageForm extends Component {
 function ImageList(props) {
   const images = props.images?.map((image, index) => (
     <li key={index}>
-      <img src={image.imgUrl} alt="There is no image!"/>
-      {/* <img src={image.imgUrl} alt="Some random images"/> */}
+      <img src={image.imgUrl} alt="Random images."/>
       <p>{image.imgCaption}</p>
     </li>
   ))
