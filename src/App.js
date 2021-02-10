@@ -25,7 +25,8 @@ class ImageForm extends Component {
   }
 
   render() {
-    return (<form onSubmit={this.handleSubmit}>
+    return (
+    <form onSubmit={this.handleSubmit}>
       <input type="text" id="imgUrl" name="imgUrl" value={this.state.imgUrl} onChange={this.handleInput}/>
       <input type="text" id="imgCaption" name="imgCaption" value={this.state.imgCaption} onChange={this.handleInput}/>
       <button className="btn">Add Image</button>
